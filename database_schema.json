@@ -1,0 +1,223 @@
+{
+    "correction_history": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "document_id",
+            "type": "INTEGER",
+            "primary_key": false
+        },
+        {
+            "column": "field_name",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "old_value",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "new_value",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "corrected_at",
+            "type": "TIMESTAMP",
+            "primary_key": false
+        }
+    ],
+    "documents": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "filename",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "file_type",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "processing_status",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "upload_date",
+            "type": "TIMESTAMP",
+            "primary_key": false
+        }
+    ],
+    "extracted_text": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "document_id",
+            "type": "INTEGER",
+            "primary_key": false
+        },
+        {
+            "column": "extracted_content",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "created_at",
+            "type": "TIMESTAMP",
+            "primary_key": false
+        }
+    ],
+    "invoices": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "document_id",
+            "type": "INTEGER",
+            "primary_key": false
+        },
+        {
+            "column": "invoice_number",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "invoice_date",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "supplier_name",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "customer_name",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "subtotal",
+            "type": "REAL",
+            "primary_key": false
+        },
+        {
+            "column": "tax",
+            "type": "REAL",
+            "primary_key": false
+        },
+        {
+            "column": "total",
+            "type": "REAL",
+            "primary_key": false
+        },
+        {
+            "column": "currency",
+            "type": "TEXT",
+            "primary_key": false
+        }
+    ],
+    "line_items": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "invoice_id",
+            "type": "INTEGER",
+            "primary_key": false
+        },
+        {
+            "column": "description",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "quantity",
+            "type": "REAL",
+            "primary_key": false
+        },
+        {
+            "column": "unit_price",
+            "type": "REAL",
+            "primary_key": false
+        },
+        {
+            "column": "amount",
+            "type": "REAL",
+            "primary_key": false
+        }
+    ],
+    "processing_history": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "document_id",
+            "type": "INTEGER",
+            "primary_key": false
+        },
+        {
+            "column": "processing_status",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "details",
+            "type": "TEXT",
+            "primary_key": false
+        },
+        {
+            "column": "processed_at",
+            "type": "TIMESTAMP",
+            "primary_key": false
+        }
+    ],
+    "sqlite_sequence": [
+        {
+            "column": "name",
+            "type": "",
+            "primary_key": false
+        },
+        {
+            "column": "seq",
+            "type": "",
+            "primary_key": false
+        }
+    ],
+    "validation_errors": [
+        {
+            "column": "id",
+            "type": "INTEGER",
+            "primary_key": true
+        },
+        {
+            "column": "document_id",
+            "type": "INTEGER",
+            "primary_key": false
+        },
+        {
+            "column": "error_message",
+            "type": "TEXT",
+            "primary_key": false
+        }
+    ]
+}

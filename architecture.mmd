@@ -1,0 +1,12 @@
+flowchart TD
+    A[User] --> B[Gradio Web Interface]
+    B --> C[FastAPI Backend]
+    C --> D[Document Upload]
+    D --> E[File Type Detection]
+    E --> F[Document Processing]
+    F --> G[PDF Text Extraction / OCR / Spreadsheet Extraction]
+    G --> H[Invoice Data Extraction]
+    H --> I[Validation and Duplicate Detection]
+    I --> J[SQLite Database]
+    J --> K[Search and Correction APIs]
+    K --> B

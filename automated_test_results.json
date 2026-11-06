@@ -1,0 +1,16 @@
+{
+    "tested_at": "2026-11-06T06:28:39.240533",
+    "total_tests": 8,
+    "passed": 8,
+    "failed": 0,
+    "results": {
+        "PDF processing": "PASS",
+        "Excel processing": "PASS",
+        "CSV processing": "PASS",
+        "Image OCR": "PASS",
+        "Corrupted PDF handling": "PASS",
+        "Unsupported file handling": "PASS",
+        "API health": "PASS",
+        "Keyword search": "PASS"
+    }
+}
